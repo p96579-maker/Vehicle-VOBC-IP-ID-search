@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vehicle VOBC IP & ID search</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Professional tool to look up Vehicle VOBC IP & ID by vehicle number.">
+<script id="bootstrap-data" type="application/json">[
+  {
+    "vehicle": "5",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.1.1",
+        "remote_ip": "172.23.1.1"
+      },
+      "B": {
+        "location_ip": "172.24.129.1",
+        "remote_ip": "172.23.129.1"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.16.2",
+        "replica3": "172.24.144.2"
+      },
+      "B": {
+        "replica1": "172.24.16.66",
+        "replica3": "172.24.144.66"
+      }
+    },
+    "consist": "33",
+    "vobc_id": {
+      "left_top": "1065",
+      "right_bottom": "1066"
+    }
+  },
+  {
+    "vehicle": "6",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.1.65",
+        "remote_ip": "172.23.1.65"
+      },
+      "B": {
+        "location_ip": "172.24.129.65",
+        "remote_ip": "172.23.129.65"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.16.130",
+        "replica3": "172.24.144.130"
+      },
+      "B": {
+        "replica1": "172.24.16.194",
+        "replica3": "172.24.144.194"
+      }
+    },
+    "consist": "34",
+    "vobc_id": {
+      "left_top": "1067",
+      "right_bottom": "1068"
+    }
+  },
+  {
+    "vehicle": "7",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.1.129",
+        "remote_ip": "172.23.1.129"
+      },
+      "B": {
+        "location_ip": "172.24.129.129",
+        "remote_ip": "172.23.129.129"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.17.2",
+        "replica3": "172.24.145.2"
+      },
+      "B": {
+        "replica1": "172.24.17.66",
+        "replica3": "172.24.145.66"
+      }
+    },
+    "consist": "35",
+    "vobc_id": {
+      "left_top": "1069",
+      "right_bottom": "1070"
+    }
+  },
+  {
+    "vehicle": "8",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.1.193",
+        "remote_ip": "172.23.1.193"
+      },
+      "B": {
+        "location_ip": "172.24.129.193",
+        "remote_ip": "172.23.129.193"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.32.2",
+        "replica3": "172.24.160.2"
+      },
+      "B": {
+        "replica1": "172.24.32.66",
+        "replica3": "172.24.160.66"
+      }
+    },
+    "consist": "65",
+    "vobc_id": {
+      "left_top": "1129",
+      "right_bottom": "1130"
+    }
+  },
+  {
+    "vehicle": "9",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.2.1",
+        "remote_ip": "172.23.2.1"
+      },
+      "B": {
+        "location_ip": "172.24.130.1",
+        "remote_ip": "172.23.130.1"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.32.130",
+        "replica3": "172.24.160.130"
+      },
+      "B": {
+        "replica1": "172.24.32.194",
+        "replica3": "172.24.160.194"
+      }
+    },
+    "consist": "66",
+    "vobc_id": {
+      "left_top": "1131",
+      "right_bottom": "1132"
+    }
+  },
+  {
+    "vehicle": "10",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.2.65",
+        "remote_ip": "172.23.2.65"
+      },
+      "B": {
+        "location_ip": "172.24.130.65",
+        "remote_ip": "172.23.130.65"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.48.2",
+        "replica3": "172.24.176.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "97",
+    "vobc_id": {
+      "left_top": "1193",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "11",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.2.129",
+        "remote_ip": "172.23.2.129"
+      },
+      "B": {
+        "location_ip": "172.24.130.129",
+        "remote_ip": "172.23.130.129"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.48.130",
+        "replica3": "172.24.176.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "98",
+    "vobc_id": {
+      "left_top": "1195",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "12",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.2.193",
+        "remote_ip": "172.23.2.193"
+      },
+      "B": {
+        "location_ip": "172.24.130.193",
+        "remote_ip": "172.23.130.193"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.49.2",
+        "replica3": "172.24.177.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "99",
+    "vobc_id": {
+      "left_top": "1197",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "13",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.3.1",
+        "remote_ip": "172.23.3.1"
+      },
+      "B": {
+        "location_ip": "172.24.131.1",
+        "remote_ip": "172.23.131.1"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.49.130",
+        "replica3": "172.24.177.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "100",
+    "vobc_id": {
+      "left_top": "1199",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "14",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.3.65",
+        "remote_ip": "172.23.3.65"
+      },
+      "B": {
+        "location_ip": "172.24.131.65",
+        "remote_ip": "172.23.131.65"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.50.2",
+        "replica3": "172.24.178.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "101",
+    "vobc_id": {
+      "left_top": "1201",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "15",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.3.129",
+        "remote_ip": "172.23.3.129"
+      },
+      "B": {
+        "location_ip": "172.24.131.129",
+        "remote_ip": "172.23.131.129"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.50.130",
+        "replica3": "172.24.178.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "102",
+    "vobc_id": {
+      "left_top": "1203",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "16",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.3.193",
+        "remote_ip": "172.23.3.193"
+      },
+      "B": {
+        "location_ip": "172.24.131.193",
+        "remote_ip": "172.23.131.193"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.51.2",
+        "replica3": "172.24.179.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "103",
+    "vobc_id": {
+      "left_top": "1205",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "17",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.132.1",
+        "remote_ip": "172.23.132.1"
+      },
+      "B": {
+        "location_ip": "172.24.132.1",
+        "remote_ip": "172.23.132.1"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.51.130",
+        "replica3": "172.24.179.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "104",
+    "vobc_id": {
+      "left_top": "1207",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "18",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.4.65",
+        "remote_ip": "172.23.4.65"
+      },
+      "B": {
+        "location_ip": "172.24.132.65",
+        "remote_ip": "172.23.132.65"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.52.2",
+        "replica3": "172.24.180.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "105",
+    "vobc_id": {
+      "left_top": "1209",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "19",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.4.129",
+        "remote_ip": "172.23.4.129"
+      },
+      "B": {
+        "location_ip": "172.24.132.129",
+        "remote_ip": "172.23.132.129"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.52.130",
+        "replica3": "172.24.180.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "106",
+    "vobc_id": {
+      "left_top": "1211",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "20",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.4.193",
+        "remote_ip": "172.23.4.193"
+      },
+      "B": {
+        "location_ip": "172.24.132.193",
+        "remote_ip": "172.23.132.193"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.17.130",
+        "replica3": "172.24.145.130"
+      },
+      "B": {
+        "replica1": "172.24.17.194",
+        "replica3": "172.24.145.194"
+      }
+    },
+    "consist": "36",
+    "vobc_id": {
+      "left_top": "1072",
+      "right_bottom": "1071"
+    }
+  },
+  {
+    "vehicle": "21",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.5.1",
+        "remote_ip": "172.23.5.1"
+      },
+      "B": {
+        "location_ip": "172.24.133.1",
+        "remote_ip": "172.23.133.1"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.53.2",
+        "replica3": "172.24.181.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "107",
+    "vobc_id": {
+      "left_top": "1213",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "22",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.5.65",
+        "remote_ip": "172.23.5.65"
+      },
+      "B": {
+        "location_ip": "172.24.133.65",
+        "remote_ip": "172.23.133.65"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.53.130",
+        "replica3": "172.24.181.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "108",
+    "vobc_id": {
+      "left_top": "1215",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "23",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.5.129",
+        "remote_ip": "172.23.5.129"
+      },
+      "B": {
+        "location_ip": "172.24.133.129",
+        "remote_ip": "172.23.133.129"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.18.2",
+        "replica3": "172.24.146.2"
+      },
+      "B": {
+        "replica1": "172.24.18.66",
+        "replica3": "172.24.146.66"
+      }
+    },
+    "consist": "37",
+    "vobc_id": {
+      "left_top": "1074",
+      "right_bottom": "1073"
+    }
+  },
+  {
+    "vehicle": "24",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.5.193",
+        "remote_ip": "172.23.5.193"
+      },
+      "B": {
+        "location_ip": "172.24.133.193",
+        "remote_ip": "172.23.133.193"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.54.2",
+        "replica3": "172.24.182.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "109",
+    "vobc_id": {
+      "left_top": "1217",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "25",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.6.1",
+        "remote_ip": "172.23.6.1"
+      },
+      "B": {
+        "location_ip": "172.24.134.1",
+        "remote_ip": "172.23.134.1"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.54.130",
+        "replica3": "172.24.182.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "110",
+    "vobc_id": {
+      "left_top": "1219",
+      "right_bottom": ""
+    }
+  }
+]</script>
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <header class="border-b bg-white/70 backdrop-blur sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-blue-600 text-white grid place-content-center font-bold">V</div>
+        <div>
+          <h1 class="text-lg font-semibold leading-5">Vehicle VOBC IP &amp; ID search</h1>
+          <p class="text-xs text-slate-500">Search by vehicle base number (e.g., 20) or CONSIST to view OBRU/VOBC IPs &amp; VOBC IDs.</p>
+        </div>
+      </div>
+      <a href="assets/data.json" class="text-xs text-blue-700 hover:underline">data.json</a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8 space-y-6">
+    <!-- Search Card -->
+    <section class="bg-white rounded-2xl shadow-sm ring-1 ring-slate-200">
+      <div class="p-5 border-b">
+        <h2 class="text-base font-medium">Search</h2><div id="loadStatus" class="text-xs text-slate-500 mt-1">Initializing…</div>
+      </div>
+      <div class="p-5 grid grid-cols-1 md:grid-cols-12 gap-4 items-end">
+        <div class="md:col-span-5">
+          <label class="block text-sm text-slate-600 mb-1">Vehicle number</label>
+          <input id="vehicle" type="text" placeholder="e.g. 20, 20A, 20B"
+                 class="w-full border border-slate-300 rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+          <p class="text-xs text-slate-500 mt-1">We normalize to the <span class="font-medium">base number</span> if you type 20A/20B (treated as “20”), or match CONSIST if a vehicle is not found.</p>
+        </div>
+        <div class="md:col-span-3 flex gap-2">
+          <button id="btnSearch"
+                  class="flex-1 bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition">Search</button>
+          <button id="btnClear"
+                  class="px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-50 transition">Clear</button>
+        </div>
+        <div class="md:col-span-4 text-xs text-slate-500">
+          <ul class="list-disc ms-5 space-y-1">
+            <li>Exact output format required by operations is preserved.</li>
+            <li>All IPs are highlighted in yellow.</li>
+            <li>VOBC IDs are integers (no decimals).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Dataset Summary -->
+    <section class="bg-white rounded-2xl shadow-sm ring-1 ring-slate-200">
+      <div class="p-5 border-b">
+        <h2 class="text-base font-medium">Dataset</h2>
+        <p class="text-xs text-slate-500">Click a chip to search.</p>
+      </div>
+      <div class="p-5 space-y-3">
+        <div class="text-xs text-slate-500" id="dsMeta"></div>
+        <div class="flex flex-wrap gap-2" id="vehicleChips"></div>
+        <div class="pt-2 border-t">
+          <div class="text-xs text-slate-500 mb-2">CONSIST list</div>
+          <div class="flex flex-wrap gap-2" id="consistChips"></div>
+        </div>
+      </div>
+    </section>
+        
+
+    <!-- Result Card -->
+    <section class="bg-white rounded-2xl shadow-sm ring-1 ring-slate-200">
+      <div class="p-5 flex items-center justify-between gap-3 border-b">
+        <h2 class="text-base font-medium">Result</h2>
+        <div class="flex items-center gap-2">
+          <button id="btnCopy" class="text-xs px-3 py-1.5 rounded-lg border border-slate-300 hover:bg-slate-50">Copy</button>
+          <button id="btnPrint" class="text-xs px-3 py-1.5 rounded-lg border border-slate-300 hover:bg-slate-50">Print</button>
+        </div>
+      </div>
+      <div class="p-5">
+        <div id="notice" class="text-sm text-slate-500">Enter a vehicle number to display results.</div>
+        <div id="result" class="hidden">
+          <pre id="resultText" class="font-mono text-[13px] leading-6"></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="max-w-6xl mx-auto px-4 pb-10 text-xs text-slate-500">
+    © <span id="yy"></span> Vehicle VOBC IP &amp; ID search. Internal use only.
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('yy').textContent = new Date().getFullYear();
+  </script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw-v4.js').catch(()=>{});
+  });
+}
+</script>
+
+</body>
+</html>

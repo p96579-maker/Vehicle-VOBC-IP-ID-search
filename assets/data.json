@@ -1,0 +1,590 @@
+[
+  {
+    "vehicle": "5",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.1.1",
+        "remote_ip": "172.23.1.1"
+      },
+      "B": {
+        "location_ip": "172.24.129.1",
+        "remote_ip": "172.23.129.1"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.16.2",
+        "replica3": "172.24.144.2"
+      },
+      "B": {
+        "replica1": "172.24.16.66",
+        "replica3": "172.24.144.66"
+      }
+    },
+    "consist": "33",
+    "vobc_id": {
+      "left_top": "1065",
+      "right_bottom": "1066"
+    }
+  },
+  {
+    "vehicle": "6",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.1.65",
+        "remote_ip": "172.23.1.65"
+      },
+      "B": {
+        "location_ip": "172.24.129.65",
+        "remote_ip": "172.23.129.65"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.16.130",
+        "replica3": "172.24.144.130"
+      },
+      "B": {
+        "replica1": "172.24.16.194",
+        "replica3": "172.24.144.194"
+      }
+    },
+    "consist": "34",
+    "vobc_id": {
+      "left_top": "1067",
+      "right_bottom": "1068"
+    }
+  },
+  {
+    "vehicle": "7",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.1.129",
+        "remote_ip": "172.23.1.129"
+      },
+      "B": {
+        "location_ip": "172.24.129.129",
+        "remote_ip": "172.23.129.129"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.17.2",
+        "replica3": "172.24.145.2"
+      },
+      "B": {
+        "replica1": "172.24.17.66",
+        "replica3": "172.24.145.66"
+      }
+    },
+    "consist": "35",
+    "vobc_id": {
+      "left_top": "1069",
+      "right_bottom": "1070"
+    }
+  },
+  {
+    "vehicle": "8",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.1.193",
+        "remote_ip": "172.23.1.193"
+      },
+      "B": {
+        "location_ip": "172.24.129.193",
+        "remote_ip": "172.23.129.193"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.32.2",
+        "replica3": "172.24.160.2"
+      },
+      "B": {
+        "replica1": "172.24.32.66",
+        "replica3": "172.24.160.66"
+      }
+    },
+    "consist": "65",
+    "vobc_id": {
+      "left_top": "1129",
+      "right_bottom": "1130"
+    }
+  },
+  {
+    "vehicle": "9",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.2.1",
+        "remote_ip": "172.23.2.1"
+      },
+      "B": {
+        "location_ip": "172.24.130.1",
+        "remote_ip": "172.23.130.1"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.32.130",
+        "replica3": "172.24.160.130"
+      },
+      "B": {
+        "replica1": "172.24.32.194",
+        "replica3": "172.24.160.194"
+      }
+    },
+    "consist": "66",
+    "vobc_id": {
+      "left_top": "1131",
+      "right_bottom": "1132"
+    }
+  },
+  {
+    "vehicle": "10",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.2.65",
+        "remote_ip": "172.23.2.65"
+      },
+      "B": {
+        "location_ip": "172.24.130.65",
+        "remote_ip": "172.23.130.65"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.48.2",
+        "replica3": "172.24.176.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "97",
+    "vobc_id": {
+      "left_top": "1193",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "11",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.2.129",
+        "remote_ip": "172.23.2.129"
+      },
+      "B": {
+        "location_ip": "172.24.130.129",
+        "remote_ip": "172.23.130.129"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.48.130",
+        "replica3": "172.24.176.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "98",
+    "vobc_id": {
+      "left_top": "1195",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "12",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.2.193",
+        "remote_ip": "172.23.2.193"
+      },
+      "B": {
+        "location_ip": "172.24.130.193",
+        "remote_ip": "172.23.130.193"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.49.2",
+        "replica3": "172.24.177.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "99",
+    "vobc_id": {
+      "left_top": "1197",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "13",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.3.1",
+        "remote_ip": "172.23.3.1"
+      },
+      "B": {
+        "location_ip": "172.24.131.1",
+        "remote_ip": "172.23.131.1"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.49.130",
+        "replica3": "172.24.177.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "100",
+    "vobc_id": {
+      "left_top": "1199",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "14",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.3.65",
+        "remote_ip": "172.23.3.65"
+      },
+      "B": {
+        "location_ip": "172.24.131.65",
+        "remote_ip": "172.23.131.65"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.50.2",
+        "replica3": "172.24.178.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "101",
+    "vobc_id": {
+      "left_top": "1201",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "15",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.3.129",
+        "remote_ip": "172.23.3.129"
+      },
+      "B": {
+        "location_ip": "172.24.131.129",
+        "remote_ip": "172.23.131.129"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.50.130",
+        "replica3": "172.24.178.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "102",
+    "vobc_id": {
+      "left_top": "1203",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "16",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.3.193",
+        "remote_ip": "172.23.3.193"
+      },
+      "B": {
+        "location_ip": "172.24.131.193",
+        "remote_ip": "172.23.131.193"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.51.2",
+        "replica3": "172.24.179.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "103",
+    "vobc_id": {
+      "left_top": "1205",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "17",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.132.1",
+        "remote_ip": "172.23.132.1"
+      },
+      "B": {
+        "location_ip": "172.24.132.1",
+        "remote_ip": "172.23.132.1"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.51.130",
+        "replica3": "172.24.179.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "104",
+    "vobc_id": {
+      "left_top": "1207",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "18",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.4.65",
+        "remote_ip": "172.23.4.65"
+      },
+      "B": {
+        "location_ip": "172.24.132.65",
+        "remote_ip": "172.23.132.65"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.52.2",
+        "replica3": "172.24.180.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "105",
+    "vobc_id": {
+      "left_top": "1209",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "19",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.4.129",
+        "remote_ip": "172.23.4.129"
+      },
+      "B": {
+        "location_ip": "172.24.132.129",
+        "remote_ip": "172.23.132.129"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.52.130",
+        "replica3": "172.24.180.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "106",
+    "vobc_id": {
+      "left_top": "1211",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "20",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.4.193",
+        "remote_ip": "172.23.4.193"
+      },
+      "B": {
+        "location_ip": "172.24.132.193",
+        "remote_ip": "172.23.132.193"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.17.130",
+        "replica3": "172.24.145.130"
+      },
+      "B": {
+        "replica1": "172.24.17.194",
+        "replica3": "172.24.145.194"
+      }
+    },
+    "consist": "36",
+    "vobc_id": {
+      "left_top": "1072",
+      "right_bottom": "1071"
+    }
+  },
+  {
+    "vehicle": "21",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.5.1",
+        "remote_ip": "172.23.5.1"
+      },
+      "B": {
+        "location_ip": "172.24.133.1",
+        "remote_ip": "172.23.133.1"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.53.2",
+        "replica3": "172.24.181.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "107",
+    "vobc_id": {
+      "left_top": "1213",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "22",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.5.65",
+        "remote_ip": "172.23.5.65"
+      },
+      "B": {
+        "location_ip": "172.24.133.65",
+        "remote_ip": "172.23.133.65"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.53.130",
+        "replica3": "172.24.181.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "108",
+    "vobc_id": {
+      "left_top": "1215",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "23",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.5.129",
+        "remote_ip": "172.23.5.129"
+      },
+      "B": {
+        "location_ip": "172.24.133.129",
+        "remote_ip": "172.23.133.129"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.18.2",
+        "replica3": "172.24.146.2"
+      },
+      "B": {
+        "replica1": "172.24.18.66",
+        "replica3": "172.24.146.66"
+      }
+    },
+    "consist": "37",
+    "vobc_id": {
+      "left_top": "1074",
+      "right_bottom": "1073"
+    }
+  },
+  {
+    "vehicle": "24",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.5.193",
+        "remote_ip": "172.23.5.193"
+      },
+      "B": {
+        "location_ip": "172.24.133.193",
+        "remote_ip": "172.23.133.193"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.54.2",
+        "replica3": "172.24.182.2"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "109",
+    "vobc_id": {
+      "left_top": "1217",
+      "right_bottom": ""
+    }
+  },
+  {
+    "vehicle": "25",
+    "obru": {
+      "A": {
+        "location_ip": "172.24.6.1",
+        "remote_ip": "172.23.6.1"
+      },
+      "B": {
+        "location_ip": "172.24.134.1",
+        "remote_ip": "172.23.134.1"
+      }
+    },
+    "vobc": {
+      "A": {
+        "replica1": "172.24.54.130",
+        "replica3": "172.24.182.130"
+      },
+      "B": {
+        "replica1": "",
+        "replica3": ""
+      }
+    },
+    "consist": "110",
+    "vobc_id": {
+      "left_top": "1219",
+      "right_bottom": ""
+    }
+  }
+]
